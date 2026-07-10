@@ -1,0 +1,13 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - QUIBL_RETRIEVAL_STORE_PATH=/data/quibl/chroma
+    volumes:
+      - quibl_data:/data/quibl
+
+volumes:
+  quibl_data:

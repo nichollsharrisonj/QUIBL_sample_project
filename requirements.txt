@@ -1,0 +1,5 @@
+--extra-index-url https://test.pypi.org/simple/
+
+annoy==1.17.3
+fastapi>=0.103.0,<1.0.0
+quibl==0.1.0
